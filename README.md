@@ -17,6 +17,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ## Library
 data.table
+
 dplyr
 
 ## Input
@@ -24,22 +25,37 @@ dplyr
 The data should reside on the specific relative path for the script to run accordingly
 
 ./UCI HAR Dataset/test/X_test.txt
+
 ./UCI HAR Dataset/test/Y_test.txt
+
 ./UCI HAR Dataset/train/X_train.txt
+
 ./UCI HAR Dataset/train/Y_train.txt
+
 ./UCI HAR Dataset/test/subject_test.txt
+
 ./UCI HAR Dataset/train/subject_train.txt
+
 ./UCI HAR Dataset/features.txt
 
 ## Script
-run_analysis.R
+There's no variable to run_analysis.R
+
+```R
+source("run_analysis.R")
+tidyData <- run_analysis()
+```
 
 ## Codebook
 ./UCI HAR Dataset/features.txt  - Code numbers and matching features
+
 Variable names are assigned according to this document
+
 ./UCI HAR Dataset/features_info.txt   - Verbose description about each variables
+
 ./UCI HAR Dataset/activity_labels.txt - Activity labels. Activities are matched according to this document
 
 ## Output
 subject_activity_means.txt.
+
 A tidy data set of the raw data.
